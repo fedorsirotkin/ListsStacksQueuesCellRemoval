@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto/Roboto.woff2') format('woff2'), url('fonts/roboto/Roboto.woff') format('woff'), url('fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: calc(100% - 20px);
+    border-left: 1px solid #3399cc;
+    border-right: 1px solid #3399cc;
+}
+
+h2 {
+    font-size: 2em;
+    background-color: #3399cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 8px;
+}
+
+p {
+    font-size: 1.6em;
+    margin: 5px;
+}
+
+input {
+    font-size: 1em;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+label > input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 2px;
+    text-align: center;
+    outline: 0;
+}
+
+#condition p {
+    text-align: justify;
+}
+
+#output {
+    border-bottom: 1px solid #3399cc;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.cell {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #ddf7ff;
+    transition: background-color 0.1s linear;
+}
+
+.cell:hover {
+    background-color: #c9e3ff;
+}
+
+.cell.selected {
+    background-color: #4c8efb;
+}
+
+.cell.selected:hover {
+    background-color: #318efd;
+}
+

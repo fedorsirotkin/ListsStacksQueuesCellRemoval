@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Лабораторная работа №1 - Удаление клеток</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="lib/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/remsquare.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="condition">
+                <h2>Условие задачи</h2>
+                <p>Из листа клетчатой бумаги размером М*N клеток удалили некоторые клетки. На сколько кусков распадется оставшаяся часть листа?</p>
+                <p>Пример: Если из шахматной доски удалить все клетки одного цвета, то оставшаяся часть распадется на 32 куска.</p>
+                <p>Примечание: Две клетки не распадаются, если они имеют общую сторону.</p>
+            </div>
+            <div id="input">
+                <h2>Входные параметры</h2>
+                <p><label>Число строк (M): <input id="row" type="number"></label></p>
+                <p><label>Число столбцов (N): <input id="col" type="number"></label></p>
+                <div id="grid">
+                    <p>Введите число строк и столбцов в соответствующие текстовые поля.</p>
+                </div>
+            </div>
+            <div id="output">
+                <h2>Выходные параметры</h2>
+                <p id="answer">Входные параметры не введены...</p>
+            </div>
+        </div>
+    </body>
+</html>
